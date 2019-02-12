@@ -21,6 +21,6 @@ printf "ZAP-daemon log output follows"
 printf "$divider"
 printf "\n"
 
-docker logs $CONTAINER_ID
+docker logs $CONTAINER_ID > scanresults.txt
 
 docker stop $CONTAINER_ID
